@@ -1,0 +1,2 @@
+class DisorderSymptomsController < ApplicationController
+end
