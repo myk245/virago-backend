@@ -1,0 +1,2 @@
+class DisorderSymptom < ApplicationRecord
+end
