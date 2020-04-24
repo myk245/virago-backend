@@ -1,2 +1,0 @@
-class TreatmentsController < ApplicationController
-end
