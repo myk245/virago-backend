@@ -1,2 +1,0 @@
-class DisorderSymptomsController < ApplicationController
-end
