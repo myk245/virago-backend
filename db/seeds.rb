@@ -110,3 +110,21 @@ p4 = Post.create(title: "Baking Helps", content: "When I'm feeling sad or stress
    image_url: "http://tny.im/lDD", likes: 6, user_id: 4)
 p5 = Post.create(title: "Perpetual Traveler", content: "Traveling has helped me deal with depression and anxiety. Experiencing new places and cultures makes me feel happy and fulfilled, and my confidence has never been higher.",
    image_url: "http://tny.im/lDE", likes: 11, user_id: 5)
+
+# Seeds for Comments (content: "", user_id: , post_id: )
+c1 = Comment.create(content: "Yes, agreed 1000%. Sending you love!", user_id: 4, post_id: 1)
+c2 = Comment.create(content: "I'd be interested! I recently did a group meditation on the beach and it was so wonderful.", user_id: 2, post_id: 3)
+c3 = Comment.create(content: "Wanna be my travel partner? Always down to explore new places.", user_id: 1, post_id: 5)
+c4 = Comment.create(content: "You bake the most delcious things! Feel free to send some my way.", user_id: 3, post_id: 4)
+c5 = Comment.create(content: "Here for you, darling! I hope you know you are never alone. Let me know if there is anything I can do to help you. I've struggled with depression before, too.", user_id: 5, post_id: 2)
+
+# Seeds for Tags (disorder_id: , post_id: )
+tg1 = Tag.create(disorder_id: 1, post_id: 1)
+tg2 = Tag.create(disorder_id: 2, post_id: 1)
+tg3 = Tag.create(disorder_id: 3, post_id: 1)
+tg4 = Tag.create(disorder_id: 1, post_id: 2)
+tg5 = Tag.create(disorder_id: 2, post_id: 2)
+tg6 = Tag.create(disorder_id: 8, post_id: 3)
+tg7 = Tag.create(disorder_id: 5, post_id: 3)
+tg8 = Tag.create(disorder_id: 7, post_id: 4)
+tg9 = Tag.create(disorder_id: 4, post_id: 5)
