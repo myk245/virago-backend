@@ -96,3 +96,22 @@ t10 = Treatment.create(name: "Dialectical Behavior Therapy", description: "a typ
    mindfulness meditation, muscle relaxation, and breath training")
 t11 = Treatment.create(name: "Schema Therapy", description: "an approach that integrates elements from cognitive behavioral therapy, attachment theory, and a number of other approaches; it expands on CBT 
    through exploration of emotions, maladaptive coping methods, and the origin of mental health concerns")
+
+# Seeds for Users (username: "", password: "", name: "")
+u1 = User.create(username: "cindylouwho", password: "abc", name: "Cindy")
+u2 = User.create(username: "messer", password: "abc", name: "David")
+u3 = User.create(username: "lauren", password: "abc", name: "Lauren")
+u4 = User.create(username: "rachel", password: "abc", name: "Rachel")
+u5 = User.name(username: "jax", password: "abc", name: "Jacky")
+
+# Seeds for Posts (title: "", content: "", image_url: "", likes: , user_id: )
+p1 = Post.create(title: "Stronger Together", content: "Let's always check up on each other, support each other, and lift each other up. No matter what we're going through, we can help each other get through anything.",
+   image_url: "http://tny.im/lDA", likes: 5, user_id: 1)
+p2 = Post.create(title: "Feeling Low", content: "I've been struggling with depression, anxiety, and loneliness. I don't know what to do.", 
+   image_url: "http://tny.im/lDB", likes: 10, user_id: 2)
+p3 = Post.create(title: "Meditation Queen", content: "I've been practicing meditation for a week now and have noticed such a difference in my anxiety, stress level, and overall happiness. Thinking about starting a
+   meditation group. Comment below if you would like to join!", image_url: "http://tny.im/lDC", likes: 7, user_id: 3)
+p4 = Post.create(title: "Baking Helps", content: "When I'm feeling sad or stressed, I bake. It helps keep my mind off things. Plus it usually results in something delicious and comforting that I can share.",
+   image_url: "http://tny.im/lDD", likes: 6, user_id: 4)
+p5 = Post.create(title: "Perpetual Traveler", content: "Traveling has helped me deal with depression and anxiety. Experiencing new places and cultures makes me feel happy and fulfilled, and my confidence has never been higher.",
+   image_url: "http://tny.im/lDE", likes: 11, user_id: 5)
