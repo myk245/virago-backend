@@ -54,11 +54,25 @@ d8 = Disorder.create(name: "Schizophrenia", details: "Schizophrenia is a mental 
    reality, disorganized speech or behavior, and decreased participation in daily activities. Difficulty with concentration and memory may also be present.The exact 
    prevalence of schizophrenia is difficult to measure, but estimates range from 0.25% to 0.64% of U.S. adults. Although schizophrenia can occur at any age, the average age 
    of onset tends to be in the late teens to the early 20s for men, and the late 20s to early 30s for women.")
-d9 = Disorder.create(name: "Eating Disorders", details: "Eating disorders are a range of psychological conditions that cause unhealthy eating habits to develop. They might 
-   start with an obsession with food, body weight, or body shape. In severe cases, eating disorders can cause serious health consequences, so seeking treatment is critical. 
-   Those with eating disorders can have a variety of symptoms, but most include the severe restriction of food, food binges, or purging behaviors, such as vomiting or 
-   over-exercising. Although eating disorders can affect people of any gender at any life stage, they are most often reported in adolescents and young women.")
-d10 = Disorder.create(name: "Addiction and Substance Use Disorders", details: "Addiction is a complex condition, a brain disease that is manifested by compulsive substance 
-   use despite harmful consequence. People with addiction have an intense focus on using a certain substance(s), such as alcohol or drugs, to the point that it takes over 
-   their life. Individuals who go through addiction continue consuming alcohol or other substances even when they know it will cause problems.")
-   
+
+# Seeds for Symptoms (name: "", description: "")
+sym1 = Symptom.create(name: "Restlessness", description: "feeling constantly restless, wound-up, or on-edge, even when you have no reason to be")
+sym2 = Symptom.create(name: "Fatigue", description: "feeling easily fatigued, even after inactivity")
+sym3 = Symptom.create(name: "Irritability", description: "a feeling of prolonged agitation or anger; you become easily frustrated or upset")
+sym4 = Symptom.create(name: "Sleep Problems", description: "trouble falling asleep, staying asleep, and/or getting quality sleep; changes in sleeping habits")
+sym5 = Symptom.create(name:"Extreme Mood Changes", description: "going between highs and lows, often without warning or cause")
+sym6 = Symptom.create(name: "Disorganized Thinking", description: "issues with concentrating, thinking, remembering things, or completing tasks; mind goes blank")
+sym7 = Symptom.create(name: "Avoidant Behavior", description: "going out of your way to avoid specific places, people, or situations; when unavoidable, these are met with 
+   intense anxiety and fear")
+sym8 = Symptom.create(name: "Unexplained Physical Ailments", description: "might include (but are not limited to) heart palpitations, excessive muscle tension, gastrointestional
+   issues, trembling, hyperventilation, headaches, excessive sweating, and vague and ongoing aches and pains")
+sym9 = Symptom.create(name: "Loss of Appetite", description: "a sudden and unexplained change in appetite")
+sym10 = Symptom.create(name: "Suicidal Thoughts", description: "persistent feelings of hopelessness and thoughts about ending your life") 
+sym11 = Symptom.create(name: "Detachment", description: "a sense of detachment from your emotions, reality, or other people")
+sym12 = Symptom.create(name: "Out-of-Body Experiences", description: "feeling as though you are not really living your experiences, but rather watching a movie of your own life")
+sym13 = Symptom.create(name: "Hallucinations", description: "hearing voices, seeing things, or smelling things others can’t perceive, but that seem very real to the person experiencing them")
+sym14 = Symptom.create(name: "Social Withdrawal", description: "loss of interest in social activity and interaction")
+sym15 = Symptom.create(name: "Alcoholism/Substance Abuse", description: "a reliance on alcohol or other substances")
+sym16 = Symptom.create(name: "Intrusive Thoughts", description: "intrusive, irrational thoughts or impulses that repeatedly occur")
+sym17 = Symptom.create(name: "Compulsive Behavior", description: "repetitive acts/rituals that temporarily relieve the stress brought on by an obsession")
+
