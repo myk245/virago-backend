@@ -1,10 +1,5 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 # Seeds for Disorders (name: "", details: "")
 # source: https://nami.org/About-Mental-Illness/Mental-Health-Conditions/Anxiety-Disorders
@@ -56,26 +51,26 @@ d8 = Disorder.create(name: "Schizophrenia", details: "Schizophrenia is a mental 
    of onset tends to be in the late teens to the early 20s for men, and the late 20s to early 30s for women.")
 
 # Seeds for Symptoms (name: "", description: "")
-sym1 = Symptom.create(name: "Restlessness", description: "feeling constantly restless, wound-up, or on-edge, even when you have no reason to be")
-sym2 = Symptom.create(name: "Fatigue", description: "feeling easily fatigued, even after inactivity")
-sym3 = Symptom.create(name: "Irritability", description: "a feeling of prolonged agitation or anger; you become easily frustrated or upset")
-sym4 = Symptom.create(name: "Sleep Problems", description: "trouble falling asleep, staying asleep, and/or getting quality sleep; changes in sleeping habits")
-sym5 = Symptom.create(name:"Extreme Mood Changes", description: "going between highs and lows, often without warning or cause")
-sym6 = Symptom.create(name: "Disorganized Thinking", description: "issues with concentrating, thinking, remembering things, or completing tasks; mind goes blank")
-sym7 = Symptom.create(name: "Avoidant Behavior", description: "going out of your way to avoid specific places, people, or situations; when unavoidable, these are met with 
+s1 = Symptom.create(name: "Restlessness", description: "feeling constantly restless, wound-up, or on-edge, even when you have no reason to be")
+s2 = Symptom.create(name: "Fatigue", description: "feeling easily fatigued, even after inactivity")
+s3 = Symptom.create(name: "Irritability", description: "a feeling of prolonged agitation or anger; you become easily frustrated or upset")
+s4 = Symptom.create(name: "Sleep Problems", description: "trouble falling asleep, staying asleep, and/or getting quality sleep; changes in sleeping habits")
+s5 = Symptom.create(name:"Extreme Mood Changes", description: "going between highs and lows, often without warning or cause")
+s6 = Symptom.create(name: "Disorganized Thinking", description: "issues with concentrating, thinking, remembering things, or completing tasks; mind goes blank")
+s7 = Symptom.create(name: "Avoidant Behavior", description: "going out of your way to avoid specific places, people, or situations; when unavoidable, these are met with 
    intense anxiety and fear")
-sym8 = Symptom.create(name: "Unexplained Physical Ailments", description: "might include (but are not limited to) heart palpitations, excessive muscle tension, gastrointestional
+s8 = Symptom.create(name: "Unexplained Physical Ailments", description: "might include (but are not limited to) heart palpitations, excessive muscle tension, gastrointestional
    issues, trembling, hyperventilation, headaches, excessive sweating, and vague and ongoing aches and pains")
-sym9 = Symptom.create(name: "Loss of Appetite", description: "a sudden and unexplained change in appetite")
-sym10 = Symptom.create(name: "Suicidal Thoughts", description: "persistent feelings of hopelessness and thoughts about ending your life") 
-sym11 = Symptom.create(name: "Detachment", description: "a sense of detachment from your emotions, reality, or other people")
-sym12 = Symptom.create(name: "Out-of-Body Experiences", description: "feeling as though you are not really living your experiences, but rather watching a movie of your own life")
-sym13 = Symptom.create(name: "Hallucinations", description: "hearing voices, seeing things, or smelling things others can’t perceive, but that seem very real to the person experiencing them")
-sym14 = Symptom.create(name: "Social Withdrawal", description: "loss of interest in social activity and interaction")
-sym15 = Symptom.create(name: "Alcoholism/Substance Abuse", description: "a reliance on alcohol or other substances")
-sym16 = Symptom.create(name: "Intrusive Thoughts", description: "intrusive, irrational thoughts or impulses that repeatedly occur")
-sym17 = Symptom.create(name: "Compulsive Behavior", description: "repetitive acts/rituals that temporarily relieve the stress brought on by an obsession")
-sym18 = Symptom.create(name: "Negative Symptoms", description: "examples include lack of speech, emotional flatness, or lack of motivation")
+s9 = Symptom.create(name: "Loss of Appetite", description: "a sudden and unexplained change in appetite")
+s10 = Symptom.create(name: "Suicidal Thoughts", description: "persistent feelings of hopelessness and thoughts about ending your life") 
+s11 = Symptom.create(name: "Detachment", description: "a sense of detachment from your emotions, reality, or other people")
+s12 = Symptom.create(name: "Out-of-Body Experiences", description: "feeling as though you are not really living your experiences, but rather watching a movie of your own life")
+s13 = Symptom.create(name: "Hallucinations", description: "hearing voices, seeing things, or smelling things others can’t perceive, but that seem very real to the person experiencing them")
+s14 = Symptom.create(name: "Social Withdrawal", description: "loss of interest in social activity and interaction")
+s15 = Symptom.create(name: "Alcoholism/Substance Abuse", description: "a reliance on alcohol or other substances")
+s16 = Symptom.create(name: "Intrusive Thoughts", description: "intrusive, irrational thoughts or impulses that repeatedly occur")
+s17 = Symptom.create(name: "Compulsive Behavior", description: "repetitive acts/rituals that temporarily relieve the stress brought on by an obsession")
+s18 = Symptom.create(name: "Negative Symptoms", description: "examples include lack of speech, emotional flatness, or lack of motivation")
 
 # Seeds for Treatments (name: "", description: "")
 t1 = Treatment.create(name: "Psychotherapy", description: "talk therapy with a psychiatrist, psychologist, or other mental health provider; types of psychotherapy
