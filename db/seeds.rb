@@ -97,7 +97,7 @@ u1 = User.create(username: "cindylouwho", password: "abc", name: "Cindy")
 u2 = User.create(username: "messer", password: "abc", name: "David")
 u3 = User.create(username: "lauren", password: "abc", name: "Lauren")
 u4 = User.create(username: "rachel", password: "abc", name: "Rachel")
-u5 = User.name(username: "jax", password: "abc", name: "Jacky")
+u5 = User.create(username: "jax", password: "abc", name: "Jacky")
 
 # Seeds for Posts (title: "", content: "", image_url: "", likes: , user_id: )
 p1 = Post.create(title: "Stronger Together", content: "Let's always check up on each other, support each other, and lift each other up. No matter what we're going through, we can help each other get through anything.",
