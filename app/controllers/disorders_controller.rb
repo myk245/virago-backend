@@ -1,4 +1,4 @@
-class Api::V1::DisordersController < ApplicationController
+class DisordersController < ApplicationController
    def index
       disorders = Disorder.all
       render json: disorders, except: [:updated_at]
