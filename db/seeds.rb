@@ -75,4 +75,24 @@ sym14 = Symptom.create(name: "Social Withdrawal", description: "loss of interest
 sym15 = Symptom.create(name: "Alcoholism/Substance Abuse", description: "a reliance on alcohol or other substances")
 sym16 = Symptom.create(name: "Intrusive Thoughts", description: "intrusive, irrational thoughts or impulses that repeatedly occur")
 sym17 = Symptom.create(name: "Compulsive Behavior", description: "repetitive acts/rituals that temporarily relieve the stress brought on by an obsession")
+sym18 = Symptom.create(name: "Negative Symptoms", description: "examples include lack of speech, emotional flatness, or lack of motivation")
 
+# Seeds for Treatments (name: "", description: "")
+t1 = Treatment.create(name: "Psychotherapy", description: "talk therapy with a psychiatrist, psychologist, or other mental health provider; types of psychotherapy
+   include Cognitive Behavioral Therapy (CBT), Exposure Response Prevention, Interpersonal Psychotherapy, Psychodynamic Therapy, Family Focused Therapy, and Dialectical Behavior Therapy")
+t2 = Treatment.create(name: "Medication", description: "there are many different medications available, and your doctor can work with you to find the best one for you; 
+   medication is most effective when coupled with psychotherapy")
+t3 = Treatment.create(name: "Complementary Health Approaches", description: "alternative therapies/approaches such as meditation, mindfulness, yoga, exercise, acupuncture, etc.")
+t4 = Treatment.create(name: "Psychosocial Treatments", description: "different types of psychotherapy and social and vocational training, and aim to provide support, 
+   education, and guidance to people with mental illness and their families")
+t5 = Treatment.create(name: "Lifestyle Changes", description: "making changes to lifestyle choices such as sleeping pattern, diet, exercise, alcohol consumption, etc.")
+t6 = Treatment.create(name: "Electroconvulsive Therapy (ECT)", description: "a procedure, done under general anesthesia, in which small electric currents are passed through the brain, 
+   intentionally triggering a brief seizure; can provide rapid, significant improvements in severe symptoms")
+t7 = Treatment.create(name: "Self Care", description: "the act of doing things that benefit your mental, physical, and emotional health")
+t8 = Treatment.create(name: "Coordinated Specialty Care (CSC)", description: "a recovery-oriented treatment program for people with first episode psychosis; often involves
+   psychotherapy, medication management geared to individuals with FEP, family education and support, case management, and work or education support")
+t9 = Treatment.create(name: "Hospitalization", description: "may be required when a more intense treatment is necessary; can help keep you safe from self-injury and address suicidal thoughts and behaviors")
+t10 = Treatment.create(name: "Dialectical Behavior Therapy", description: "a type of therapy in which patients learn more productive behaviors and responses by participating in sessions on problem solving, 
+   mindfulness meditation, muscle relaxation, and breath training")
+t11 = Treatment.create(name: "Schema Therapy", description: "an approach that integrates elements from cognitive behavioral therapy, attachment theory, and a number of other approaches; it expands on CBT 
+   through exploration of emotions, maladaptive coping methods, and the origin of mental health concerns")
