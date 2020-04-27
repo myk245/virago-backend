@@ -1,7 +1,7 @@
 class Api::V1::PostsController < ApplicationController
    def index 
       posts = Post.all
-      render json: posts, except: [:created_at, :updated_at], include: [:user, :comment]
+      render json: posts, except: [:created_at, :updated_at], include: [:user, :comments]
    end
 
    def show
