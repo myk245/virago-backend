@@ -6,12 +6,12 @@ class Api::V1::CommentsController < ApplicationController
 
    def show 
       comment = Comment.find(params[:id])
-      render json: comment, except: [:created_at, :updated_at]
+      render json: comment, except: [:created_at, :updated_at], include: [:user, :post]
    end
 
    def create
       comment = Comment.create(comment_params)
-      render json: comment, except: [:created_at, :updated_at], status:201
+      render json: comment, except: [:created_at, :updated_at], include: [:user => {except: :password}]
    end
 
    def update

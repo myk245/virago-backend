@@ -12,7 +12,7 @@ class Api::V1::PostsController < ApplicationController
 
    def create
       post = Post.create(post_params)
-      render json: post, except: [:created_at, :updated_at], status:201
+      render json: post, except: [:created_at, :updated_at], include: [:comments => {include: :user}, :user => {except: :password}], status:201
    end 
 
    def update
