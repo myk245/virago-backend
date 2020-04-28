@@ -101,7 +101,7 @@ u5 = User.create(username: "jax", password: "abc", name: "Jacky")
 
 # Seeds for Posts (title: "", content: "", image_url: "", likes: , user_id: )
 p1 = Post.create(title: "Stronger Together", content: "Let's always check up on each other, support each other, and lift each other up. No matter what we're going through, we can help each other get through anything.",
-   image_url: "http://tny.im/lDA", likes: 5, user_id: 1)
+   image_url: "http://tny.im/lFk", likes: 5, user_id: 1)
 p2 = Post.create(title: "Feeling Low", content: "I've been struggling with depression, anxiety, and loneliness. I don't know what to do.", 
    image_url: "http://tny.im/lDB", likes: 10, user_id: 2)
 p3 = Post.create(title: "Meditation Queen", content: "I've been practicing meditation for a week now and have noticed such a difference in my anxiety, stress level, and overall happiness. Thinking about starting a

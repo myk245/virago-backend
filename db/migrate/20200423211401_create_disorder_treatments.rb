@@ -1,8 +1,8 @@
 class CreateDisorderTreatments < ActiveRecord::Migration[6.0]
   def change
     create_table :disorder_treatments do |t|
-      t.integer :disorder_id
-      t.integer :treatment_id
+      t.references :disorder, foreign_key: true
+      t.references :treatment, foreign_key: true
 
       t.timestamps
     end
