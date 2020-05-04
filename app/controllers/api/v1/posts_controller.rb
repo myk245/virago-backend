@@ -15,7 +15,7 @@ class Api::V1::PostsController < ApplicationController
       params["disorder_ids"].each do |disorder_id|
          Tag.create(disorder_id: disorder_id, post_id: post.id)
       end 
-      
+
       render json: post, except: [:created_at, :updated_at], include: [:tags, :disorders, :comments => {include: :user}, :user => {except: :password}], status:201
    end 
 
