@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   end 
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:index, :show]
+      resources :users, only: [:create]
+        post '/login', to: 'auth#create'
+        get '/profile', to: 'users#profile'
     end 
   end 
   # resources :disorder_symptoms
