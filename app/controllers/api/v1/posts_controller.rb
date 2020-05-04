@@ -7,12 +7,15 @@ class Api::V1::PostsController < ApplicationController
 
    def show
       post = Post.find(params[:id]) 
-      render json: post, except: [:created_at, :updated_at], include: [:comments => {include: :user}, :user => {except: :password}]
+      render json: post, except: [:created_at, :updated_at], include: [:disorders, :comments => {include: :user}, :user => {except: :password}]
    end 
 
    def create
       post = Post.create(post_params)
-      render json: post, except: [:created_at, :updated_at], include: [:comments => {include: :user}, :user => {except: :password}], status:201
+      # post.disorder_ids << post.disorders.ids
+      # post.disorders.map(disorder => disorder.id)
+      # tag = Tag.create(post_id: post.id, disorder_id: )
+      render json: post, except: [:created_at, :updated_at], include: [:disorders, :comments => {include: :user}, :user => {except: :password}], status:201
    end 
 
    def update
@@ -28,6 +31,6 @@ class Api::V1::PostsController < ApplicationController
 
    private
    def post_params
-      params.require(:post).permit(:title, :content, :image_url, :likes, :user_id)
+      params.require(:post).permit(:title, :content, :image_url, :likes, :user_id, disorder_ids: [])
    end 
 end
