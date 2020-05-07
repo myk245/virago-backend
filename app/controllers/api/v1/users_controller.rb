@@ -1,12 +1,9 @@
 class Api::V1::UsersController < ApplicationController
-   # def index
-   #    users = User.all 
-   #    render json: users, except: [:created_at, :updated_at]
-   # end
+   skip_before_action :authorized, only: [:create]
 
-   # def show
-   #    user = User.find(params[:id])
-   #    render json: user, except: [:created_at, :updated_at]
+   # allows an authenticated user can access their profile information
+   # def profile
+   #    render json: { user: user}, status: :accepted
    # end 
 
    def create 
